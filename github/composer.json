@@ -1,6 +1,6 @@
 {
     "require": {
-        "illuminate/support": "^5.2",
-        "raveren/kint": "^1.0"
+        "illuminate/support": "^5.5",
+        "kint-php/kint": "^2.2"
     }
 }

@@ -1,7 +1,7 @@
 github/config.json
-
 github/public/last/index\.html
-
 github/public/this/index\.html
-
 github/\.idea/workspace\.xml
+github/vendor
+.DS_Store
+/.idea
