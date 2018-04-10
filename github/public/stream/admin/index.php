@@ -11,13 +11,13 @@ if ( isset($_GET['success']) && $_GET['success'] == 1 )
 <div style="height: 100vh">
     <div class="flex-center flex-column">
         <div class="dev_night_logo"><img class="shadowfilter" id="logo" src="img/dev_night-logo.png"></div>
-        <div class="card">
+        <!--<div class="card">
             <div class="card-header blue-grey lighten-1 white-text">
                 Übersicht
             </div>
             <div class="card-body">
                 <form action="includes/sql_setStatus.php" method="post">
-                    <input name="active" type="checkbox" <?php include 'include/checked.php' ?> value="1" class="btn btn-blue-grey">
+                    <input name="active" type="checkbox"value="1" class="btn btn-blue-grey">
 
                     <input class="form-control" name="infoText" placeholder="textBla" type="text">
                     <input class="form-control" name="nextNight" placeholder="textBla" type="text">
@@ -26,7 +26,7 @@ if ( isset($_GET['success']) && $_GET['success'] == 1 )
                     </div>
                 </form>
             </div>
-        </div>
+        </div>-->
 
         <div class="card">
             <div class="card-header blue-grey lighten-1 white-text">
