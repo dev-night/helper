@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     unset($pdo);
 }
 ?>
-<? include 'includes/head.php';?>
+<?php include 'includes/head.php';?>
 <body>
 <div style="height: 100vh">
     <div class="flex-center flex-column">
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" value="Login">
                 </div>
-        <p>Du hast keinen Account? <a href="mailto:kaw@tradebyte.biz?subject=Anfordern%20Login-Daten%20der%20/dev/night - Admin Seite&amp;body=Name:%20%0D%0A%0D%0AEmail:">Anfordern</a></p>
+                <p>Du hast keinen Account? <a href="mailto:kaw@tradebyte.biz?subject=Anfordern%20Login-Daten%20der%20/dev/night - Admin Seite&amp;body=Name:%20%0D%0A%0D%0AEmail:">Anfordern</a></p>
         </form>
     </div>
 </div>

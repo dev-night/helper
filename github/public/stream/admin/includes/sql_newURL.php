@@ -1,4 +1,4 @@
-<? include 'includes/secure.php'; ?>
+<?php include 'includes/secure.php'; ?>
 <?php
 $youtube = $_POST['url'];
 try{

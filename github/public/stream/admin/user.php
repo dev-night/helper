@@ -90,36 +90,40 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     unset($pdo);
 }
 ?>
-<? include 'includes/secure.php'; ?>
-<? include 'includes/head.php';?>
-<? include 'includes/header.php';?>
+<?php include 'includes/secure.php'; ?>
+<?php include 'includes/head.php';?>
+<?php include 'includes/header.php';?>
 <body>
     <div style="height: 100vh">
-    <div class="flex-center flex-column">
-        <div class="dev_night_logo"><img id="logo" src="img/dev_night-logo.png" class="shadowfilter"></div>
-        <div class="card">
-            <div class="card-header blue-grey lighten-1 white-text">Benutzer hinzufügen</div>
-            <div class="card-body">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-            <label>Benutzername</label>
-            <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
-            <span class="help-block"><?php echo $username_err; ?></span>
+        <div class="flex-center flex-column">
+            <div class="dev_night_logo"><img id="logo" src="img/dev_night-logo.png" class="shadowfilter"></div>
+            <div class="card">
+                <div class="card-header blue-grey lighten-1 white-text">Benutzer hinzufügen</div>
+                <div class="card-body">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                            <label>Benutzername</label>
+                            <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+                            <span class="help-block"><?php echo $username_err; ?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                            <label>Passwort</label>
+                            <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+                            <span class="help-block"><?php echo $password_err; ?></span>
+                        </div>
+                        <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                            <label>Passwort bestätigen</label>
+                            <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+                            <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button class="btn btn-blue-grey" type="submit">Hinzufügen</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-            <label>Passwort</label>
-            <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
-            <span class="help-block"><?php echo $password_err; ?></span>
-        </div>
-        <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-            <label>Passwort bestätigen</label>
-            <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
-            <span class="help-block"><?php echo $confirm_password_err; ?></span>
-        </div>
-        <div class="text-center mt-4">
-            <button class="btn btn-blue-grey" type="submit">Hinzufügen</button>
-        </div>
-    </form>
+    </div>
 </body>
 <? include 'includes/scripts.php';?>
 </html>
