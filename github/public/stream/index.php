@@ -15,5 +15,5 @@ function Redirect($url, $permanent = false)
     }
     exit();
 }
+
 Redirect($youtube, false);
-?>
