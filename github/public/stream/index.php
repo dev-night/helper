@@ -8,21 +8,20 @@ $result = $pdo->prepare("SELECT url FROM link");
 $result->execute();
 
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-$youtube = $row['url'];
-    }
+    $youtube = $row['url'];
+}
 
-    if ($detect) {
-        function Redirect($url, $permanent = false)
-        {
-            if (headers_sent() === false) {
-                header('Location: ' . $url, true, ($permanent === true) ? 301 : 302);
-            }
-            exit();
+if ($detect) {
+    function Redirect($url, $permanent = false)
+    {
+        if (headers_sent() === false) {
+            header('Location: ' . $url, true, ($permanent === true) ? 301 : 302);
         }
+        exit();
+    }
 
-        Redirect($youtube, false);
-    }
-    else {
+    Redirect($youtube, false);
+} else {
     header('Location: ' . $desktopURL);
-    }
+}
 ?>
