@@ -1,7 +1,13 @@
+# Config file
 github/config.json
 
-github/public/last/index\.html
+# IDEs
+github/\.idea/workspace\.xml
 
+# This/Last redirect service
+github/public/last/index\.html
 github/public/this/index\.html
 
-github/\.idea/workspace\.xml
+
+# Streaming redirect tool
+github/public/stream/admin/includes/*.db
