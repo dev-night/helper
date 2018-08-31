@@ -10,4 +10,4 @@ function Redirect($url, $permanent = false)
     exit();
 }
 
-Redirect('https://www.meetup.com/de-DE/dev_night/events/252970941/', false);
+Redirect('https://www.meetup.com/de-DE/dev_night/events/254267435/', false);
