@@ -10,4 +10,4 @@ function Redirect($url, $permanent = false)
     exit();
 }
 
-Redirect('https://join.slack.com/t/dev-night/shared_invite/enQtNDU4NDE2NzY3NTc1LWE0MjQzZGFmMGQ5Zjk4MTMwMjk4Nzg0ODk5MDJkZGQ3Y2IxN2Q4MTVjNWNkYjM2ZWJkNjdkNjExY2Q2ODFmYjc', false);
+Redirect('https://join.slack.com/t/dev-night/shared_invite/enQtNDU4NjIxMDg3MjQ4LTFhMDFhNDUzNzUxODMxMTFjNDdlMDc4YjFjYTVlNDc3ODUzZTMxMmNjMjA5OTlmZDJlYjZkZjFlOGY2NTc2YzQ', false);
